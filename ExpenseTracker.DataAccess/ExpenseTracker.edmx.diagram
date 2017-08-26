@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="786e448a521e4a7aa7cae02f56ea2685" Name="Diagram1">
+        <EntityTypeShape EntityType="ExpenseTrackerModel.User" Width="1.5" PointX="0.625" PointY="0.5" />
+        <EntityTypeShape EntityType="ExpenseTrackerModel.UserToken" Width="1.5" PointX="2.875" PointY="0.5" />
+        <AssociationConnector Association="ExpenseTrackerModel.FK_UserToken_User1" />
+        <EntityTypeShape EntityType="ExpenseTrackerModel.Transaction" Width="1.5" PointX="2.875" PointY="2.625" />
+        <EntityTypeShape EntityType="ExpenseTrackerModel.TransactionCategory" Width="1.5" PointX="5.125" PointY="2.625" />
+        <AssociationConnector Association="ExpenseTrackerModel.FK_Transaction_TransactionCategory" />
+        <AssociationConnector Association="ExpenseTrackerModel.FK_Transaction_User" />
+        <EntityTypeShape EntityType="ExpenseTrackerModel.TransactionReceipt" Width="1.5" PointX="0.5" PointY="3.625" />
+        <AssociationConnector Association="ExpenseTrackerModel.FK_TransactionReceipt_Transaction" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

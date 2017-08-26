@@ -1,0 +1,4 @@
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.BusinessObjects\bin\Debug\ExpenseTracker.BusinessObjects.dll
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.BusinessObjects\bin\Debug\ExpenseTracker.BusinessObjects.pdb
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.BusinessObjects\obj\Debug\ExpenseTracker.BusinessObjects.dll
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.BusinessObjects\obj\Debug\ExpenseTracker.BusinessObjects.pdb

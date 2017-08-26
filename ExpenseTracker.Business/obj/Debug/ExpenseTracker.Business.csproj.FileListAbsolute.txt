@@ -1,0 +1,14 @@
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\bin\Debug\ExpenseTracker.Business.dll
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\bin\Debug\ExpenseTracker.Business.pdb
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\bin\Debug\ExpenseTracker.BusinessObjects.dll
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\bin\Debug\ExpenseTracker.DataAccess.dll
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\bin\Debug\AutoMapper.dll
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\bin\Debug\EntityFramework.dll
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\bin\Debug\ExpenseTracker.BusinessObjects.pdb
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\bin\Debug\ExpenseTracker.DataAccess.pdb
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\bin\Debug\ExpenseTracker.DataAccess.dll.config
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\bin\Debug\AutoMapper.xml
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\bin\Debug\EntityFramework.xml
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\obj\Debug\ExpenseTracker.Business.csprojResolveAssemblyReference.cache
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\obj\Debug\ExpenseTracker.Business.dll
+H:\Projects\ExpenseTracker.Service\ExpenseTracker.Business\obj\Debug\ExpenseTracker.Business.pdb
