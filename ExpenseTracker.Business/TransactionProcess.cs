@@ -2,6 +2,7 @@
 using ExpenseTracker.BusinessObjects;
 using ExpenseTracker.DataAccess;
 using System.Collections.Generic;
+using System;
 
 namespace ExpenseTracker.Business
 {
@@ -25,6 +26,16 @@ namespace ExpenseTracker.Business
         public bool CategoryExists(string name)
         {
             return DataFactory.GetTransactionData().CategoryExists(name);
+        }
+
+        public List<TransactionReceiptDTO> GetTransactionReceipts(int transactionId)
+        {
+            return DataFactory.GetTransactionData().GetTransactionReceipts(transactionId);
+        }
+
+        public TransactionDTO GetTransaction(int transactionId)
+        {
+            return DataFactory.GetTransactionData().GetTransaction(transactionId);
         }
     }
 }

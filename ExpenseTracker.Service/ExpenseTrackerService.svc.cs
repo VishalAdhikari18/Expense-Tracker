@@ -3,6 +3,7 @@ using ExpenseTracker.BusinessObjects;
 using ExpenseTracker.Service.Behaviours;
 using ExpenseTracker.Service.ServiceContract;
 using System.Collections.Generic;
+using System;
 
 namespace ExpenseTracker.Service
 {
@@ -30,9 +31,19 @@ namespace ExpenseTracker.Service
             return BusinessFactory.GetTransactionProcess().GetTransactionCategories();
         }
 
+        public List<TransactionReceiptDTO> GetTransactionReceipts(int transactionId)
+        {
+            return BusinessFactory.GetTransactionProcess().GetTransactionReceipts(transactionId);
+        }
+
         public List<TransactionDTO> GetTransactions(TransactionSearchCriteriaDTO searchCriteria)
         {
             return BusinessFactory.GetUserProcess().GetTransactions(searchCriteria);
+        }
+
+        public TransactionDTO GetTransaction(int transactionId)
+        {
+            return BusinessFactory.GetTransactionProcess().GetTransaction(transactionId);
         }
     }
 }

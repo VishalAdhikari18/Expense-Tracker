@@ -28,5 +28,13 @@ namespace ExpenseTracker.Service.ServiceContract
         [OperationContract]
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, RequestFormat =WebMessageFormat.Json)]
         List<TransactionDTO> GetTransactions(TransactionSearchCriteriaDTO searchCriteria);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        List<TransactionReceiptDTO> GetTransactionReceipts(int transactionId);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        TransactionDTO GetTransaction(int transactionId);
     }
 }

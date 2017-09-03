@@ -12,5 +12,9 @@ namespace ExpenseTracker.DataAccess.Interface
         List<TransactionCategoryDTO> GetTransactionCategories();
 
         bool CategoryExists(string name);
+
+        List<TransactionReceiptDTO> GetTransactionReceipts(int transactionId);
+
+        TransactionDTO GetTransaction(int transactionId);
     }
 }

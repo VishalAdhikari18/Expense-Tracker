@@ -63,5 +63,36 @@ namespace ExpenseTracker.DataAccess
                 return dbctx.TransactionCategories.Where(x => x.CategoryName == name).Any();
             }
         }
+
+        public List<TransactionReceiptDTO> GetTransactionReceipts(int transactionId)
+        {
+            using (var dbctx = new ExpenseTrackerEntities())
+            {
+                return Mapper.Map<List<TransactionReceiptDTO>>(dbctx.
+                    TransactionReceipts.Where(r => r.TransactionId == transactionId));
+            }
+        }
+
+        public TransactionDTO GetTransaction(int transactionId)
+        {
+            using (var dbctx = new ExpenseTrackerEntities())
+            {
+                return dbctx.Transactions
+                    .Where(t => t.TransactionId == transactionId)
+                    .Select(t => new TransactionDTO
+                    {
+                        TransactionId = t.TransactionId,
+                        TransactionAmount = t.TransactionAmount,
+                        TransactionDate = t.TransactionDate,
+                        TransactionNote = t.TransactionNote,
+                        TransactionCategory = new TransactionCategoryDTO
+                        {
+                            CategoryId = t.TransactionCategory.CategoryId,
+                            CategoryName = t.TransactionCategory.CategoryName
+                        }
+                    })
+                    .SingleOrDefault();
+            }
+        }
     }
 }
