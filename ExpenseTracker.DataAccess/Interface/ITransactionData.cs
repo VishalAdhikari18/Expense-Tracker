@@ -16,5 +16,7 @@ namespace ExpenseTracker.DataAccess.Interface
         List<TransactionReceiptDTO> GetTransactionReceipts(int transactionId);
 
         TransactionDTO GetTransaction(int transactionId);
+
+        void DeleteTransaction(int transactionId);
     }
 }

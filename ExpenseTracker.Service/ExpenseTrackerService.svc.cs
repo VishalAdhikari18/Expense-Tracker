@@ -45,5 +45,10 @@ namespace ExpenseTracker.Service
         {
             return BusinessFactory.GetTransactionProcess().GetTransaction(transactionId);
         }
+
+        public void DeleteTransaction(int transactionId)
+        {
+            BusinessFactory.GetTransactionProcess().DeleteTransaction(transactionId);
+        }
     }
 }

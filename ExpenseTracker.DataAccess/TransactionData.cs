@@ -2,6 +2,7 @@
 using ExpenseTracker.BusinessObjects;
 using ExpenseTracker.DataAccess.Interface;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 
 namespace ExpenseTracker.DataAccess
@@ -92,6 +93,20 @@ namespace ExpenseTracker.DataAccess
                         }
                     })
                     .SingleOrDefault();
+            }
+        }
+
+        public void DeleteTransaction(int transactionId)
+        {
+            using (var dbctx = new ExpenseTrackerEntities())
+            {
+                Transaction transaction = dbctx.Transactions
+                    .Where(t => t.TransactionId == transactionId)
+                    .Include(t => t.TransactionReceipts)
+                    .Single();
+                dbctx.TransactionReceipts.RemoveRange(transaction.TransactionReceipts);
+                dbctx.Transactions.Remove(transaction);
+                dbctx.SaveChanges();
             }
         }
     }

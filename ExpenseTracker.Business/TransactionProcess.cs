@@ -37,5 +37,10 @@ namespace ExpenseTracker.Business
         {
             return DataFactory.GetTransactionData().GetTransaction(transactionId);
         }
+
+        public void DeleteTransaction(int transactionId)
+        {
+            DataFactory.GetTransactionData().DeleteTransaction(transactionId);
+        }
     }
 }
